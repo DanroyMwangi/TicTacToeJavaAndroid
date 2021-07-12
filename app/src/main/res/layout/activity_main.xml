@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/grid0"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/image_border"
+                android:onClick="Tapped"
+                android:tag="0" />
+
+            <ImageView
+                android:id="@+id/grid1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/image_border"
+                android:onClick="Tapped"
+                android:tag="1" />
+
+            <ImageView
+                android:id="@+id/grid2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/image_border"
+                android:onClick="Tapped"
+                android:tag="2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/grid3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/image_border"
+                android:onClick="Tapped"
+                android:tag="3" />
+
+            <ImageView
+                android:id="@+id/grid4"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/image_border"
+                android:onClick="Tapped"
+                android:tag="4" />
+
+            <ImageView
+                android:id="@+id/grid5"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/image_border"
+                android:onClick="Tapped"
+                android:tag="5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/grid6"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/image_border"
+                android:onClick="Tapped"
+                android:tag="6" />
+
+            <ImageView
+                android:id="@+id/grid7"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/image_border"
+                android:onClick="Tapped"
+                android:tag="7" />
+
+            <ImageView
+                android:id="@+id/grid8"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/image_border"
+                android:onClick="Tapped"
+                android:tag="8" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/restartBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_restart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/turnDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="Turn Displayer"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/nothing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="SCORES"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/scoresPane"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/scoresPane"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:text="0:0"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/turnDisplay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/nothing2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developed by bof.ndungu"
+        android:textStyle="italic|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
